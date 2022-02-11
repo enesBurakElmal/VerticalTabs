@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/verticaltabs/static/css/main.1c3278ae.css",
+    "main.js": "/verticaltabs/static/js/main.dce488f0.js",
+    "static/media/topguy.png": "/verticaltabs/static/media/topguy.bdcb632dbcaff24515e7.png",
+    "static/media/kuba.PNG": "/verticaltabs/static/media/kuba.0f56d0bd42f614f9751c.PNG",
+    "index.html": "/verticaltabs/index.html",
+    "main.1c3278ae.css.map": "/verticaltabs/static/css/main.1c3278ae.css.map",
+    "main.dce488f0.js.map": "/verticaltabs/static/js/main.dce488f0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1c3278ae.css",
+    "static/js/main.dce488f0.js"
+  ]
+}
