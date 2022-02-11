@@ -13,6 +13,10 @@ body {
   font-family: 'Roboto', 'sans-serif';
 }
 
+/* .örnek-kapsayıcı ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+} */
+
 .container {
   max-width: 1200px;
   width: 100%;
@@ -31,12 +35,17 @@ body {
   width: 100%;
   justify-content: space-between;
   border-bottom: 1px solid rgba(140, 130, 115, 0.4);
+  background-color: rgb(33, 34, 34);
+  color: rgb(240, 239, 235);
+  z-index: 999;
 }
 
 .side-nav-title {
   font-size: 36px;
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding-left: 15px;
+  overflow: hidden;
 }
 
 .side-nav-image {
@@ -47,7 +56,7 @@ body {
 .side-nav-slash {
   position: relative;
   font-size: 36px;
-  color: darkgray;
+  color: rgb(90, 87, 87);
 }
 
 .side-nav-birth {
@@ -60,6 +69,13 @@ body {
   position: relative;
   width: 100%;
   align-items: center;
+  overflow: hidden;
+  overflow-y: scroll;
+  max-height: 400px;
+}
+
+.aside-nav {
+  overflow: hidden;
 }
 
 .side-nav-info {
@@ -115,8 +131,8 @@ body {
   flex-direction: row;
   width: 100%;
   padding: 15px 0;
-  background: rgb(31, 30, 30);
-  color: white;
+  background: rgba(132, 133, 131, 0.075);
+  color: rgb(12, 12, 12);
   cursor: pointer;
   border-bottom: 1px solid rgba(0, 0, 0, 0.274);
   border-radius: 4px;
@@ -126,6 +142,10 @@ body {
   transition: 0.3s all;
 }
 
+.tabs:hover {
+  background-color: rgb(94, 92, 92);
+}
+
 .tabs:not(:last-child) {
   border-right: 1px solid rgba(0, 0, 0, 0.274);
 }
@@ -133,9 +153,9 @@ body {
 .active-tabs {
   display: flex;
   position: relative;
-  color: black;
+  /* color: rgb(24, 23, 23); */
   border-bottom: 1px solid transparent;
-  background: rgba(19, 18, 18, 0.075);
+  /* background: rgba(132, 133, 131, 0.075); */
 }
 
 .bloc-tabs {
@@ -205,4 +225,8 @@ button {
   .side-nav-birth {
     width: 25%;
   }
+}
+
+.aside-nav::-webkit-scrollbar-thumb {
+  background: rgb(204, 50, 50);
 }

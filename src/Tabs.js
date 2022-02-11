@@ -2,6 +2,8 @@ import { useState } from 'react'
 import './App.css'
 import HeaderLogo from './assets/topguy.png'
 import Kuba from './assets/kuba.PNG'
+import ArifIsik from './assets/arifisik.PNG'
+import Merva from './assets/merva.PNG'
 
 function Tabs() {
   const [toggleState, setToggleState] = useState(1)
@@ -62,6 +64,29 @@ function Tabs() {
               <h2 className="side-nav-name">Sir Kuba</h2>
             </div>
           </div>
+          <div
+            className={toggleState === 4 ? 'tabs active-tabs' : 'tabs'}
+            onClick={() => toggleTab(4)}
+          >
+            <img className="imgs" src={Merva} alt="imgs"></img>
+            <div className="side-nav-info">
+              <p className="side-nav-job">Engineer</p>
+              <p className="side-nav-birth">02/02/1997</p>
+              <h2 className="side-nav-name">Merve Güzel</h2>
+            </div>
+          </div>
+          <div
+            className={toggleState === 5 ? 'tabs active-tabs' : 'tabs'}
+            onClick={() => toggleTab(5)}
+          >
+            <img className="imgs" src={ArifIsik} alt="imgs"></img>
+
+            <div className="side-nav-info">
+              <p className="side-nav-job">Comedian</p>
+              <p className="side-nav-birth">23/04/1973</p>
+              <h2 className="side-nav-name">Arif Isik</h2>
+            </div>
+          </div>
         </aside>
         <div className="tab-content">
           <div className="content-tabs">
@@ -106,6 +131,35 @@ function Tabs() {
                 distinctio recusandae totam quidem repudiandae omnis veritatis
                 nostrum laboriosam architecto optio rem, dignissimos voluptatum
                 beatae aperiam voluptatem atque. Beatae rerum dolores sunt.
+              </p>
+            </div>
+            <div
+              className={
+                toggleState === 4 ? 'content  active-content' : 'content'
+              }
+            >
+              <h2>Content 4</h2>
+              <hr />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati praesentium incidunt quia aspernatur quasi quidem
+                facilis quo nihil vel voluptatum?
+              </p>
+            </div>
+            <div
+              className={
+                toggleState === 5 ? 'content  active-content' : 'content'
+              }
+            >
+              <h2>FiveFiveSixdotcom</h2>
+              <hr />
+              <p>
+                cabin crew, slices on your cross check, copy that as we should
+                be landing shortly please be sure that your tray table is locked
+                and the chair is in the upright position. the artistic points
+                are; "five points six, five point eight five five six dot com"
+                getting opportunities what about the fucking coordinates? roger
+                that, copy that.
               </p>
             </div>
           </div>
